@@ -1,0 +1,35 @@
+<div class="UpdateDialog">
+    <form name="myForm">
+        <div class="form-group">
+            <label for="fio">ФИО</label>
+            <input type="text" class="form-control" id="fio" name="fio"
+                   ng-model="modelFormUpdate.fio" required ng-trim="false">
+        </div>
+        <div class="form-group">
+            <label for="sex">Пол</label>
+            <input type="text" class="form-control" id="sex" name="sex"
+                   ng-model="modelFormUpdate.sex" required ng-trim="false">
+        </div>
+        <div class="form-group">
+            <label for="contact">Контакт</label>
+            <input type="text" class="form-control" id="contact" name="contact"
+                   ng-model="modelFormUpdate.contact" required ng-trim="false">
+        </div>
+        <div class="form-group">
+            <label for="date">Дата</label>
+            <input type="text" class="form-control" id="date" name="date"
+                   ng-model="modelFormUpdate.date" required ng-trim="false">
+        </div>
+        <div class="form-group">
+            <label for="start_time">Время прихода</label>
+            <input type="text" class="form-control" id="start_time" name="start_time"
+                   ng-model="modelFormUpdate.start_time" required ng-trim="false">
+        </div>
+        <div class="form-group">
+            <label for="end_time">Время ухода</label>
+            <input type="text" class="form-control" id="end_time" name="end_time"
+                   ng-model="modelFormUpdate.end_time" required ng-trim="false">
+        </div>
+        <button type="submit" class="btn btn-default" ng-click="submitForm()">Submit</button>
+    </form>
+</div>

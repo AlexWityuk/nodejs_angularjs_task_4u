@@ -1,0 +1,31 @@
+<div class="CreateDialog">
+    <form name="myForm">
+        <div class="form-group">
+            <label for="family">Фамилия</label>
+            <input type="text" class="form-control" id="family" placeholder="Фамилия" name="Family"
+                   ng-model="modelForm.Family" ng-pattern="regex" required ng-trim="false">
+            <span class="error" ng-show="myForm.Family.$error.pattern">Фамилия должна быть без пробелов!</span>
+        </div>
+        <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" class="form-control" id="name" placeholder="Имя" name="Name"
+                   ng-model="modelForm.Name" ng-pattern="regex" required ng-trim="false">
+            <span class="error" ng-show="myForm.Name.$error.pattern">Имя должно быть без пробелов!</span>
+        </div>
+        <div class="form-group">
+            <label for="lastname">Отчество</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Отчество" name="Lastname"
+                   ng-model="modelForm.Lastname" ng-pattern="regex" required ng-trim="false">
+            <span class="error" ng-show="myForm.Lastname.$error.pattern">Отчество должно быть без пробелов!</span>
+        </div>
+        <div class="form-group">
+            <label for="sex">Пол</label>
+            <input type="text" class="form-control" id="sex" placeholder="муж. жен." ng-model="modelForm.sex">
+        </div>
+        <div class="form-group">
+            <label for="contacts">Контакт</label>
+            <input type="text" class="form-control" id="contacts" placeholder="Контактные данные" ng-model="modelForm.contact">
+        </div>
+        <button type="submit" class="btn btn-default" ng-click="submitForm()">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>NodeJSриложение</title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="/bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <script src="/bower_components/ui-bootstrap-tpls-2.5.0.min.js"></script>
+</head>
+<body>
+<div class="to_homepage">
+    <a href="#/"><button type="button" class="btn btn-warning">На главную страницу</button></a>
+</div>
+<section ng-view class="myapp_competitor"></section>
+<!-- Modules -->
+<script src="js/app.js"></script>
+<!-- Controllers -->
+<script src="js/controllers/MainController.js"></script>
+<script src="js/controllers/createDialogController.js"></script>
+<script src="js/controllers/updateDialogController.js"></script>
+<script src="js/controllers/SearchController.js"></script>
+</body>
+</html>
